@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body >
+    
+    <!--Start of Header-->
+    <div class="container-max">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-between py-4 border-bottom"
+      >
+        <div class="d-flex gap-5">
+<div class="city-box d-flex align-items-center gap-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-geo-alt-fill"
+    viewBox="0 0 16 16"
+  >
+    <path
+      id="tag"
+      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+    />
+  </svg>
+  <span class="city">Санкт-Петербург</span>
+  <img src="./img/arrow-down.svg" class="mt-2" alt="" />
+  <ul class="city-list" style="display: none;">
+    <li>Санкт-Петербург</li>
+    <li>Москва</li>
+    <li>Нижний Новгород</li>
+    <li>Ростов-на-Дону</li>
+  </ul>
+</div>
+
+          <div class="phone-box" class="d-flex align-items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-fill"
+              viewBox="0 0 16 16"
+            >
+              <path id="phone"
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            <span class="phone-number">8 800 785-25-35</span>
+          </div>
+        </div>
+        <a
+          href="/"
+          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+        >
+          <img src="./img/logo.svg" alt="" />
+        </a>
+        <div class="d-flex align-items-center">
+          <div class="d-flex me-4">
+            <span class="login me-2">Вход</span>
+            <img src="./img/break.svg" class="mt-1" alt="" />
+            <span class="logout ms-2 me-2">Регистрация</span>
+          </div>
+          <div class="icon-box d-flex">
+            <img src="./img/heart.svg" alt="Icon 1" class="me-2" />
+            <img src="./img/chart.svg" alt="Icon 2" class="me-2" />
+            <div class="bag d-flex justify-content-center align-items-center" tabindex="0">
+              <img class="start-50" src="./img/bag.svg" alt="Icon 3" class="me-2" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--End of Header-->
+
+      <!--Start of Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class=" nav-link px-3 text-dark" href="#"
+                  >КАТАЛОГ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#">АКЦИИ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#">БРЕНДЫ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#">МАГАЗИНЫ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#">О НАС</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#"
+                  >ДОСТАВКА И ОПЛАТА</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-dark" href="#">СТАТЬИ</a>
+              </li>
+            </ul>
+            <form class="form d-flex align-items-center ms-lg-2">
+              <div class="input-group">
+                <img src="./img/search.svg" alt="" />
+                <input
+                  type="text"
+                  class="form-control bg-light"
+                  placeholder="Поиск по сайту"
+                  aria-label="Search"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--End of Navbar-->
+
+    <!--Start of Slider-->
+    <div
+      class="container-fluid p-0 d-flex justify-content-center align-items-center mt-4"
+    >
+      <div
+        class="bg-light position-relative"
+        style="height: 560px; max-width: 1300px; width: 100%"
+      >
+        <div
+          class="position-absolute top-50 ms-4 translate-middle-y arrow-left border border-dark rounded-circle"
+          style="width: 50px; height: 50px"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="width: 40px; height: 40px"
+          >
+            <img src="./img//Arrow 1.svg" alt="" class="mt-2 ms-2" />
+          </div>
+        </div>
+        <div
+          class="position-absolute top-50 end-0 me-4 translate-middle-y arrow-right border border-dark rounded-circle"
+          style="width: 50px; height: 50px"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="width: 40px; height: 40px"
+          >
+            <img src="./img/Arrow 2.svg" alt="" class="mt-2 ms-2" />
+          </div>
+        </div>
+        <div class="img-cont col-md-6 p-0 position-absolute top-0 ">
+          <img
+            class="img-fluid h-80"
+            src="./img/big-ring.png"
+            alt="Image"
+            style="max-width: 100%; height: auto; min-width: 200px"
+          />
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-start h-100"
+          style="margin-left: 10%"
+        >
+          <h5 class="slider-t mb-4">Суперскидка до 60%</h6>
+          <h1 class="slider-h mb-3">НА БРИЛЛИАНТЫ</h1>
+          <button class="details mt-4">ПОДРОБНЕЕ</button>
+        </div>
+        <div
+          class="d-flex position-absolute bottom-0 start-50 translate-middle-x mb-4"
+        >
+          <span class="bullet mx-1"></span>
+          <span class="bullet mx-1"></span>
+          <span class="bullet mx-1"></span>
+        </div>
+      </div>
+    </div>
+    <!--End of Slider-->
+
+    <!--Start of популярные категории-->
+    <div class="container ps-0">
+      <h1 class="mb-4 prata">Популярные категории</h1>
+    </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop1.svg" alt="Image 1" class="img-fluid">
+            <div class="card-text">
+              <p>Кольца</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop2.svg" alt="Image 2" class="img-fluid">
+            <div class="card-text">
+              <p>Серьги</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop3.svg" alt="Image 3" class="img-fluid">
+            <div class="card-text">
+              <p>Помолвочные кольца</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop4.svg" alt="Image 4" class="img-fluid">
+            <div class="card-text">
+              <p>Браслеты</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop5.svg" alt="Image 5" class="img-fluid">
+            <div class="card-text">
+              <p>Колье и подвески</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mb-4 mt-4 mb-md-0">
+          <div class="card bg-light">
+            <img src="./img/pop6.svg" alt="Image 5" class="img-fluid">
+            <div class="card-text">
+              <p>Часы</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    <!--End of Популярные категории-->
+
+    <!--Start of Распродажа-->
+<div class="disc-container container-fluid" style="max-width: 1340px;">
+      <h1 class="prata">Распродажа</h1>
+      <!--buttons-->
+  <div class="mb-4 mt-4">
+    <button class="btn disc-btn me-2 mt-1 mb-1" >Кольца</button>
+    <button class="btn disc-btn me-2 mt-1 mb-1" >Серьги</button>
+    <button class="btn disc-btn me-2 mt-1 mb-1" >Браслеты</button>
+    <button class="btn disc-btn me-2 mt-1 mb-1" >Часы</button>
+  </div>
+  
+  <!--1 row-->
+  <div class="row justify-content-center mt-4">
+    <div class="col-lg-3 col-md-6 mb-4 container-for-toggle ">
+      <div class="card border toggle-card"s>
+        <img src="./img/disc1.svg" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);" alt="Your Image" />
+          <div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle-x mt-4 pt-3">
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+          </div>
+            <div class="svg-container position-absolute top-0 end-0 mt-3 me-3">
+              <svg class="mb-3" width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="coolicon" d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="eyes" fill-rule="evenodd" clip-rule="evenodd" d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z" fill="#C9C9C9"/>
+              </svg>
+          </div>
+          <div class="position-absolute top-0 start-0 mt-3 ms-4">
+            <div class="sale d-flex justify-content-center align-items-center">Sale</div>
+          </div>
+          <div class="dics-box position-absolute end-0 me-4">
+          <div class="discount d-flex justify-content-center align-items-center">-45%</div>
+          </div>
+          <div class="position-absolute bottom-0 start-0 mb-5 pb-4 ms-4">
+            <h1 class="disc-header">41 000 ₽ <s class="disc-header-w">65 000 ₽</s></h1>
+          </div>
+          <div class="position-absolute bottom-0 text-start ms-4">
+          <p class="disc-text">Стильное кольцо из белого золота c бриллиантами</p>
+          <div class="form-container mb-2" style="display:none">
+          <form class="form-box mb-2">
+            <select id="color" name="color">
+              <option value="red">Белое Золото</option>
+              <option value="blue">Желтое золото</option>
+              <option value="green">Серебро</option>
+              </select>
+          </form>
+              <form class="form-box">
+                <select id="quantity" name="quantity">
+                  <option value="1">Размер: 16</option>
+                  <option value="2">Размер: 17</option>
+                 <option value="3">Размер: 18</option>
+                 </select>
+              </form>
+          </div>
+          </div>
+      </div>
+    </div>
+    <!--2 row-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border" style="width: 310px; height: 370px; position: relative;">
+       <img src="./img/disc2.svg" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);" alt="Your Image" />
+          <div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle-x mt-4 pt-3">
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+          </div>
+            <div class="svg-container position-absolute top-0 end-0 mt-3 me-3">
+              <svg class="mb-3" width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="coolicon" d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="eyes" fill-rule="evenodd" clip-rule="evenodd" d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z" fill="#C9C9C9"/>
+              </svg>
+            </div>
+          <div class="position-absolute bottom-0 start-0 mb-5 pb-4 ms-4">
+            <h1 class="disc-header">56 000 ₽</h1>
+          </div>
+          <div class="position-absolute bottom-0 text-start ms-4">
+          <p class="disc-text">Стильное кольцо из белого золота c бриллиантами</p>
+          </div>
+      </div>
+    </div>
+    <!--3 row-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border" style="width: 310px; height: 370px; position: relative;">
+        <img src="./img/disc3.svg" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);" alt="Your Image" />
+          <div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle-x mt-4 pt-3">
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+          </div>
+            <div class="svg-container position-absolute top-0 end-0 mt-3 me-3">
+              <svg class="mb-3" width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="coolicon" d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="eyes" fill-rule="evenodd" clip-rule="evenodd" d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z" fill="#C9C9C9"/>
+              </svg>
+            </div>
+          <div class="position-absolute bottom-0 start-0 mb-5 pb-4 ms-4">
+            <h1 class="disc-header">37 500 ₽</h1>
+          </div>
+          <div class="position-absolute bottom-0 text-start ms-4">
+          <p class="disc-text">Стильное кольцо из белого золота c бриллиантами</p>
+          </div>
+      </div>
+    </div>
+    <!--4 row-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border" style="width: 310px; height: 370px; position: relative;">
+        <img src="./img/disc4.svg" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);" alt="Your Image" />
+          <div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle-x mt-4 pt-3">
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+            <span class="bullet mx-1"></span>
+          </div>
+            <div class="svg-container position-absolute top-0 end-0 mt-3 me-3">
+              <svg class="mb-3" width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="coolicon" d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="eyes" fill-rule="evenodd" clip-rule="evenodd" d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z" fill="#C9C9C9"/>
+              </svg>
+            </div>
+          <div class="position-absolute bottom-0 start-0 mb-5 pb-4 ms-4">
+            <h1 class="disc-header">39 200 ₽</h1>
+          </div>
+          <div class="position-absolute bottom-0 text-start ms-4">
+          <p class="disc-text">Стильное кольцо из белого золота c бриллиантами</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--End of Распродажа-->
+
+    <!--Start of Скидки-->
+<div class="container"style="max-width: 1340px;">
+  <div class="d-flex justify-content-center flex-wrap gap-1" >
+    <div class="flex-grow-0 mx-2 my-2" style="flex-basis: 420px; max-width: 421px;">
+      <img src="./img/скидки1.svg" class="disc-img" style="width: 100%; height: 100%;">
+    </div>
+    <div class="flex-grow-0 mx-2 my-2" style="flex-basis: 420px; max-width: 421px;">
+      <img src="./img/скидки2.svg" class="disc-img" style="width: 100%; height: 100%;">
+    </div>
+    <div class="flex-grow-0 mx-2 my-2" style="flex-basis: 420px; max-width: 421px;">
+      <img src="./img/скидки3.svg" class="disc-img" style="width: 100%; height: 100%;">
+    </div>
+  </div>
+</div>
+    <!--End of Скидки-->
+
+    <!--Start of Товар дня-->
+<div class="container goods position-relative">
+  <div class="row ring-holder">
+    <div class="col-md-6 ps-0 position-relative" style="width: 550px; height: 550px;">
+      <h1 class="prata">Товар дня</h1>
+      <div class="row mt-4 ms-3 gap-1">
+        <div class="sm-btns dark col-4">New</div>
+        <div class="sm-btns orange col-4 ml-3">Хит</div>
+        <div class="sm-btns green col-4 ml-3">Sale</div>
+      </div>
+      <div class="ms-4" >
+        <div class="day-ring"><img src="./img/day-ring.png" alt=""></div>
+      </div>
+      <img src="./img/left-arrow.svg" class="left-arrow" alt="left arrow">
+      <img src="./img/right-arrow.svg" class="right-arrow" alt="right arrow">
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+  <!-- second half -->
+  <div class="position-absolute top-0 end-0 d-flex">
+    <div class="circle me-2"> <img src="./img/Arrow 1.svg" alt="" class="ms-3 mt-3 pt-1"></div>
+    <div class="circle"><img src="./img/Arrow 2.svg" alt="" class="ms-3 mt-3 pt-1"></div>
+  </div>
+    <div class="half position-absolute start-50">
+      <div class="d-flex align-items-center gap-1 mb-2">
+        <img src="./img/Stars.svg" alt="" class="my-auto">
+        <p class="my-auto">4.2</p>
+      </div>
+      <h2>Кольцо из золота с бриллиантами</h2>
+      <p class="article pt-2 pb-2">Артикул: 1012076</p>
+      <div class=" sale-box d-flex gap-3 mb-2">
+        <h4 class="disc-header">22 000 ₽ <s class="disc-header-w ms-3">22 000 ₽</s></h4>
+        <div class="discount d-flex align-items-center justify-content-center">-45%</div>
+        <!--clock box-->
+        <div class="clock d-flex align-items-center justify-content-center gap-2 ms-3 mb-3">
+          <div class="hour">
+            <h6 class="clock-h6 text-center ">12</h6>
+            <p class="clock-p text-center ">часов</p>
+          </div>
+          :
+          <div class="minute">            
+            <h6 class="clock-h6 text-center ">46</h6>
+            <p class="clock-p text-center ">минут</p></div>
+          :
+          <div class="second">
+            <h6 class="clock-h6 text-center ">51</h6>
+            <p class="clock-p text-center ">секунд</p></div>
+          </div>
+        </div>
+        <!--Цвет-->
+        <div class="color-container mt-4">
+          <h6 class="color-h">ЦВЕТ</h6>
+          <div class="d-flex gap-1">
+            <div class="color-box d-flex align-items-center justify-content-center">
+              <div class="color gray "></div>
+            </div>
+            <div class="color-box d-flex align-items-center justify-content-center">
+              <div class="color yellow"></div>
+            </div>
+            <div class="color-box d-flex align-items-center justify-content-center">
+              <div class="color orange"></div>
+            </div>
+            <div class="color-box d-flex align-items-center justify-content-center">
+              <div class="color light"></div>
+            </div>
+          </div>
+        </div>
+        <!--Размер-->
+<div class="size-container mt-4">
+  <div class="d-flex gap-1">
+    <h6 class="color-h my-auto">РАЗМЕР</h6>
+    <div class="question text-center color-h my-auto">?</div>
+  </div>
+  <div class="d-flex mt-3 gap-1">
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">16,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">17,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">18,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">19</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">19,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">19,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">18,5</div>
+    <div tabindex="0" class="size-box d-flex justify-content-center align-items-center">19</div>
+    <div tabindex="0" class="size-box last d-flex justify-content-center align-items-center">19,5</div>
+    <div tabindex="0" class="size-box last d-flex justify-content-center align-items-center">19,5</div>
+  </div>
+  <div id="popupBox" class="popup-box">
+    <div class="popup-box-content">
+      <p>Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.</p>
+    </div>
+  </div>
+</div>
+        <!--Кнопки-->
+        <div class="btn-container d-flex mt-4 ms-2 ps-1">
+          <div class="row">
+            <button class="basket mb-2 mt-2">В КОРЗИНУ</button>
+            <button class="buy">КУПИТЬ В 1 КЛИК</button>
+          </div>
+          <div class="row share-text mb-2 me-2">
+            <div class="d-flex gap-2">
+              <svg class="my-auto" width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="like" d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              <p class="save-text my-auto">Сохранить</p>
+            </div>
+            <div class="d-flex gap-2">
+              <img class="my-auto ms-2" src="./img/chart2.svg" alt="">
+              <p class="my-auto me-2">Сравнить</p>
+            </div>
+            <div class="d-flex gap-2">
+              <img class="my-auto ms-1" src="./img/Share.svg" alt="">
+              <p class="my-auto me-2">Поделиться</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Товар дня-->
+
+    <!--Start of Статьи-->
+<div class="article-container">
+  <div class="row justify-content-center">
+    <div class="col-12 mb-2">
+      <h1 class="prata">Статьи</h1>
+    </div>
+    <div class="col-sm-6 col-lg-3 spacing">
+      <div class="article-box">
+        <img src="./img/Article1.png" alt="Image 1">
+        <p class="article-text">21 Сентября 2021</p>
+        <h6 class="article-h">Обручальные кольца: тренды 2021</h6>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 spacing">
+      <div class="article-box">
+        <img src="./img/Article2.png" alt="Image 2">
+        <p class="article-text">25 сентября 2021</p>
+        <h6 class="article-h">Главные ювелирные тренды года</h6>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 spacing">
+      <div class="article-box">
+        <img src="./img/Article3.png" alt="Image 3">
+        <p class="article-text">21 сентября 2021</p>
+        <h6 class="article-h">Жемчуг: 7 малоизвестных фактов о культовом украшении</h6>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 spacing">
+      <div class="article-box">
+        <img src="./img/Article4.png" alt="Image 4">
+        <p class="article-text">21 сентября 2021</p>
+        <h6 class="article-h">Как отличить золото от подделки: 10 практических советов</h6>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--End of Статьи-->
+
+<script>
+
+  //liking effect
+    let svgContainers = document.querySelectorAll('.svg-container');
+    svgContainers.forEach(function(container) {
+    let coolicon = container.querySelector('#coolicon');
+    let originalColor = coolicon.getAttribute('fill');
+    let newColor = '#e24b33';
+    let isToggled = false;
+
+    coolicon.addEventListener('click', function() {
+      if (isToggled) {
+        this.style.fill = originalColor;
+        isToggled = false;
+      } else {
+        this.style.fill = newColor;
+        isToggled = true;
+      }
+    });
+  });
+
+//liking effect
+  let like = document.getElementById("like");
+  let originalColor = like.getAttribute("fill");
+  let newColor = "#e24b33";
+  let isToggled = false;
+
+  like.addEventListener("click", function() {
+    if (isToggled) {
+      this.style.fill = originalColor;
+      isToggled = false;
+    } else {
+      this.style.fill = newColor;
+      isToggled = true;
+    }
+  });
+
+
+//additional info
+  const question = document.querySelector('.question');
+const popupBox = document.getElementById('popupBox');
+
+question.addEventListener('click', function() {
+  popupBox.style.display = popupBox.style.display === 'block' ? 'none' : 'block';
+});
+
+document.addEventListener('click', function(event) {
+  if (event.target !== question && event.target.closest('.popup-box') !== popupBox) {
+    popupBox.style.display = 'none';
+  }
+});
+
+
+//City toggle
+const arrowDown = document.querySelector('.city-box img');
+const cityList = document.querySelector('.city-list');
+const cityBox = document.querySelector('.city-box .city');
+const cityListItems = document.querySelectorAll('.city-list li');
+
+arrowDown.addEventListener('click', () => {
+  cityList.style.display = cityList.style.display === 'block' ? 'none' : 'block';
+});
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.city-box')) {
+    cityList.style.display = 'none';
+  }
+});
+
+cityListItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Remove the click SVG from the previously selected city
+    const prevSelectedItem = document.querySelector('.city-list .selected');
+    if (prevSelectedItem) {
+      const prevClickSvg = prevSelectedItem.querySelector('img');
+      if (prevClickSvg) {
+        prevClickSvg.remove();
+      }
+      prevSelectedItem.classList.remove('selected');
+    }
+    
+    // Add the click SVG to the selected city
+    const clickSvg = '<img src="./img/click.svg" alt="" style="margin-left: 5px;">';
+    item.insertAdjacentHTML('beforeend', clickSvg);
+    item.classList.add('selected');
+    
+    cityBox.textContent = item.textContent;
+    cityList.style.display = 'none';
+  });
+});
+
+// Add the click SVG to the first city by default
+const firstCity = document.querySelector('.city-list li:first-child');
+const clickSvg = '<img src="./img/click.svg" alt="" style="margin-left: 5px;">';
+firstCity.insertAdjacentHTML('beforeend', clickSvg);
+firstCity.classList.add('selected');
+
+
+//choose input
+  const columns = document.querySelectorAll('.col-lg-3');
+
+  columns.forEach((column) => {
+    column.addEventListener('click', () => {
+      const formContainer = column.querySelector('.form-container');
+      formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+  
+
+  const toggleCards = document.querySelectorAll('.toggle-card');
+
+toggleCards.forEach((toggleCard) => {
+  toggleCard.addEventListener('click', () => {
+    toggleCard.classList.toggle('expanded');
+  });
+});
+
+</script>
+  </body>
+</html>
